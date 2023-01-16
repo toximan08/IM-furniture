@@ -1,0 +1,116 @@
+.top_part {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+
+
+
+  &--cata {
+    background-image: url(../img/cata_header_bgi.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    a {
+      &:not(.arrow, .header__nav-link--active)::after {
+        content: '';
+        width: 0px;
+        height: 2px;
+        display: block;
+        background: #FFFFFF;
+        transition: 300ms;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &--cart {
+    background-image: url(../img/cart_header_bgi.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    a {
+      &:not(.arrow, .header__nav-link--active)::after {
+        content: '';
+        width: 0px;
+        height: 2px;
+        display: block;
+        background: #FFFFFF;
+        transition: 300ms;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.nav-sort-cata {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 32px;
+
+  .breadcrumbs {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    &__link {
+      text-decoration: underline;
+
+      &:hover {
+        color: #888888;
+        text-decoration: none;
+      }
+    }
+
+    &__item {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+
+      &:not(:last-child)::after {
+        content: '/';
+        font-style: normal;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .select select {
+    width: 288px;
+    padding-left: 14px;
+    padding-right: 14px;
+    height: 41px;
+    border: 1px solid #C4C4C4;
+    border-radius: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    background: none;
+    outline: none;
+    background: url(../img/strelka_selector.svg) no-repeat;
+    background-position: 93% 50%;
+  }
+}

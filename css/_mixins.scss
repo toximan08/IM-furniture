@@ -1,0 +1,44 @@
+@mixin link_hover_white {
+  &::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #ffffff;
+    transition: 300ms;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+@mixin link_hover_black {
+  &::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: black;
+    transition: 300ms;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+@mixin link_hover_grey {
+  &::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #888888;
+    transition: 300ms;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}

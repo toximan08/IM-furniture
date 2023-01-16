@@ -1,0 +1,175 @@
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header {
+    padding-top: 32px;
+    border-bottom: none;
+
+    &__input {
+      display: none;
+    }
+
+    &__nav {
+      display: none;
+
+      &--mob {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+      }
+    }
+
+    &__logo-img {
+      width: 99px;
+    }
+  }
+
+  .top_content {
+    margin-top: 48px;
+
+    .link_cata {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+
+  .heading {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+
+    &__txt {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      text-align: center;
+    }
+  }
+
+  .tiny_heading {
+    padding-top: 32px;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+
+  .for_content {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+
+    .for__item {
+      grid-column: 1 / -1;
+      height: 375px;
+
+      &--big {
+        height: 244px;
+      }
+
+      &-link {
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+  }
+
+  .product {
+    width: 99vw;
+  }
+
+  .product__content {
+    justify-content: center;
+    row-gap: 32px;
+
+    .product__name {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 4px;
+    }
+
+    .price {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+
+  .product_box_price {
+    margin-top: 8px;
+    gap: 56px;
+  }
+
+  .link_box {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .footer {
+    &__form {
+      padding-bottom: 32px;
+    }
+
+    &__content {
+      justify-content: center;
+      gap: 34px;
+    }
+
+    &__info {
+      gap: 95px;
+    }
+  }
+
+  // Мобильные стили каталога 
+
+  .nav-sort-cata {
+    row-gap: 16px;
+
+    .breadcrumbs {
+      font-size: 14px;
+    }
+  }
+
+  // Мобильные стили корзины
+
+  .cart {
+    grid-template-columns: repeat(4, minmax(60px, 4fr));
+
+    &__content {
+      grid-column: span 4;
+    }
+
+    &_name_box {
+      display: none;
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__form {
+      grid-column: span 4;
+      max-width: 376px;
+    }
+
+    &__button {
+      width: 163px;
+      font-size: 12px;
+      line-height: 15px;
+
+      &--form {
+        width: 290px;
+      }
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .tiny_heading {
+    text-align: start;
+  }
+}
