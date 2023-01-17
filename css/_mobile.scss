@@ -153,7 +153,7 @@
 
     &__form {
       grid-column: span 4;
-      max-width: 376px;
+      max-width: max-content;
     }
 
     &__button {
@@ -169,11 +169,66 @@
 }
 
 @media (max-width: 415px) {
+  .top_part {
+    margin-bottom: 26px;
+  }
+
   .heading {
-    font-size: 45px;
+    font-size: 42px;
   }
 
   .tiny_heading {
     text-align: start;
+    padding-top: 20px;
+    margin-bottom: 18px;
+  }
+
+  .for_content {
+    margin-top: 18px;
+  }
+
+  .footer__info {
+    gap: 70px;
+  }
+
+  .cart {
+    row-gap: 32px;
+
+    &__content {
+      max-width: 300px;
+    }
+
+    &_item {
+      justify-content: normal;
+    }
+
+    &__info {
+      width: 226px;
+    }
+
+    &__button_box {
+      gap: 16px;
+      margin-top: 0px;
+    }
+
+    &__form {
+
+      &-heading {
+        font-size: 20px;
+      }
+
+      &-inputs {
+        gap: 36px;
+        margin-bottom: 48px;
+      }
+
+      &-input {
+        min-width: 210px;
+      }
+    }
+
+    &__button--form {
+      width: 234px;
+    }
   }
 }
